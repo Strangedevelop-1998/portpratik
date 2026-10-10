@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/fav.svg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- HERO ANIMATION CSS (ONLY BANNER) -->
+  <style>
+    .hero-animated {
+      height: 100vh;
+      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite;
+      position: relative;
+      overflow: hidden;
+    }
+
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .hero-title span {
+      color: #00c6ff;
+    }
+
+    .hero-subtitle {
+      font-size: 1.4rem;
+      min-height: 35px;
+      margin-top: 10px;
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.15;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .circle-1 {
+      width: 120px;
+      height: 120px;
+      background: #00c6ff;
+      top: 20%;
+      left: 10%;
+    }
+
+    .circle-2 {
+      width: 180px;
+      height: 180px;
+      background: #ffffff;
+      bottom: 15%;
+      right: 15%;
+      animation-delay: 2s;
+    }
+
+    .circle-3 {
+      width: 80px;
+      height: 80px;
+      background: #00c6ff;
+      top: 65%;
+      left: 70%;
+      animation-delay: 4s;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <!-- ================= HEADER (UNCHANGED) ================= -->
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Pratik Singh</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <!-- 
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div> -->
+
+    </div>
+  </header>
+
+  <!-- ================= HERO (ANIMATED ONLY) ================= -->
+  <section id="hero" class="hero-animated d-flex align-items-center">
+    <div class="container text-center" data-aos="fade-up">
+      <h1 class="hero-title text-white">
+        Hi, I'm <span>Pratik Singh</span>
+      </h1>
+
+      <h2 class="hero-subtitle text-white">
+        <span id="typed-text"></span>
+      </h2>
+
+      <a href="about.html" class="btn-get-started mt-3">About Me</a>
+    </div>
+
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+  </section>
+
+  <!-- ================= FOOTER (UNCHANGED) ================= -->
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Pratik</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://github.com/Strangedevelop-1998"><i class="bi bi-github"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/pratik-singh-35613a241"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= JS FILES ================= -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- REQUIRED FOR MENU -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Typing Animation -->
+  <script>
+    AOS.init();
+
+    const text = ["Full Stack Developer", "Web Developer", 'React Native Developer'];
+    let index = 0;
+    let charIndex = 0;
+    const speed = 100;
+    const typedText = document.getElementById("typed-text");
+
+    function typeEffect() {
+      if (charIndex < text[index].length) {
+        typedText.textContent += text[index].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeEffect, speed);
+      } else {
+        setTimeout(eraseEffect, 1500);
+      }
+    }
+
+    function eraseEffect() {
+      if (charIndex > 0) {
+        typedText.textContent = text[index].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(eraseEffect, speed);
+      } else {
+        index = (index + 1) % text.length;
+        setTimeout(typeEffect, speed);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", typeEffect);
+  </script>
+
+</body>
+
+</html>
